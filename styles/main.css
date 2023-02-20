@@ -1,62 +1,50 @@
 
-
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: red;
-
+    /* background-color: red; */
+padding: 20px 10px;
+background-image: url("https://i.pinimg.com/474x/23/3e/53/233e535e37e0879f5f5458f58ea599ba.jpg");
+background-repeat: no-repeat;
+background-size: cover;
 }
 h1 {
     margin: 30px;
+    padding: 20px;
+    color: red;
+    font-size: 50px;
 }
-.game {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid: gap 10px;
-    margin: 20px 0;
-   width: 300px;
-     grid: wrap;
-    justify-content: center;
-   align-items: center; */
-   background-color: red;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   width: 312px;
-   margin: auto;
+#statusText{
+    margin: 30px;
+    padding: 20px;
+    color: red;
+    font-size: 50px;
 }
-/* .board{
-    display:center;
- place-items: center ;
-  width: 300px;
-
-} */
-
-.cell {
-    background-color: aqua;
-    border: 1px solid #000;
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+#gameContainer{
+    font-family: "permanent Marker", cursive;
+    text-align: center;
+}
+#cellContainer{
     display: grid;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-    height: 100px;
-    width: 100px;
-   display: center;
-   flex-wrap: wrap;
-   cursor: pointer;
-
+    grid-template-columns: repeat(3, auto);
+    width: 300px;
+    margin: auto;
+    background-color: yellow;
 }
-
-.message {
-    margin-top: 20px ;
-    font-weight: bold;
-}
-#reset {
+#restartBtn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: blueviolet;
+    background-color:pink;
     border: 1px solid #000;
     cursor:pointer;
+    font-size: 50px;
 }
